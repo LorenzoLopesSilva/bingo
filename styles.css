@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #006d1b;
+}
+
+.sorteadorContainer{
+    width: min-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    background: #000;
+}
+
+.rick{
+    height: 300px;
+}
+
+.resultado{
+    color: rgb(255, 255, 255);
+    background: #00000083;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.portalContainer {
+  display: none;
+  place-items: center; /* Centraliza horizontal e verticalmente */
+}
+
+.item {
+  grid-area: 1 / 1; /* Faz os itens ocuparem a mesma célula do grid */
+}
+
+.btn{
+    height: 100px;
+    width: 100px;
+    background: url('imagens/botao.png') center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.cartela{
+    margin: 20px auto;
+    width: 500px;
+}
+
+.letras {
+    background: url('https://as1.ftcdn.net/v2/jpg/03/55/96/10/1000_F_355961032_sdUQt6ncjxVOYPBya7ztOo4UrZdCLal4.jpg');
+    width: 400px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(1, auto);
+
+    p {
+        border: solid 1px black;
+        padding: 5px;
+        text-align: center;
+        color: aliceblue;
+        font-weight: bold;
+    }
+}
+
+.numerosContainer {
+    width: 400px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(18, auto);
+}
+
+.numero {
+    border: solid 1px;
+    padding: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
