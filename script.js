@@ -26,19 +26,23 @@ function sortearNumero(numeros) {
     let nSorteado = numeros[sorteador]
 
     let resultado = document.querySelector(".resultado")
-    
+
     document.querySelector('.portalContainer').style.display = 'grid'
 
     numerosTabela = document.querySelectorAll('.numero')
 
     resultado.innerText = nSorteado
+    if (nSorteado == undefined) {
+        resultado.innerText = "Sem numeros"
+
+    }
 
     for (let i = 0; i < numerosTabela.length; i++) {
         if (nSorteado === numerosTabela[i].innerText) {
             numerosTabela[i].style.backgroundColor = '#6f00a3a4'
             numerosTabela[i].style.border = '2px solid black'
             numerosTabela[i].style.color = '#ffffff'
-            
+
         }
     }
     numeros.splice(sorteador, 1)
